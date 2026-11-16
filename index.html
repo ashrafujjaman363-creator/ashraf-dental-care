@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ashraf Dental Care – Chattogram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#edf2ef;--surface:#fff;--ink:#241a30;--muted:#5a5266;--teal:#A21E6B;--teal-d:#7d1551;--mint:#fae8f2;--line:#f0d0e2;--wa:#1faa59;--on-teal:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17101f;--surface:#221830;--ink:#f0ecf4;--muted:#b3a8c2;--teal:#e06bb0;--teal-d:#c94996;--mint:#2b1623;--line:#4d2d41;--on-teal:#1d1230;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17101f;--surface:#221830;--ink:#f0ecf4;--muted:#b3a8c2;--teal:#e06bb0;--teal-d:#c94996;--mint:#2b1623;--line:#4d2d41;--on-teal:#1d1230;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;font-size:16.5px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:19px;text-decoration:none;color:var(--teal)}
+nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-size:14.5px;font-weight:500}
+nav a:hover{color:var(--teal)}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;background:var(--teal);color:var(--on-teal);text-decoration:none;border:0;font:inherit;font-weight:600;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{background:var(--teal-d);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--teal);border:1.5px solid var(--teal)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.hero{padding:72px 0 40px;text-align:center}
+.hero h1{font-size:clamp(34px,7vw,62px);line-height:1.12;margin:0 0 16px;font-weight:800;letter-spacing:-.03em}
+.hero p{max-width:560px;margin:0 auto 28px;color:var(--muted);font-size:18px}
+.hero .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.smile{display:block;width:min(560px,92%);margin:44px auto 0;overflow:visible}
+.smile path{fill:none;stroke:var(--teal);stroke-linecap:round}
+#smileLine{stroke-width:10;stroke-dasharray:1;stroke-dashoffset:1}
+.tooth{fill:var(--surface);stroke:var(--teal);stroke-width:3;opacity:0;transform-box:fill-box;transform-origin:center;transform:scale(.4)}
+.tooth.on{opacity:1;transform:scale(1);transition:opacity .4s,transform .5s cubic-bezier(.3,1.6,.5,1)}
+section{padding:72px 0}
+section.alt{background:var(--mint)}
+h2{font-size:clamp(26px,4.5vw,36px);margin:0 0 10px;line-height:1.2;letter-spacing:-.02em}
+.lead{color:var(--muted);max-width:560px;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;justify-content:space-between}
+.card h3{margin:0 0 6px;font-size:18px;color:var(--teal)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.srv-doc{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);display:flex;align-items:center;gap:10px;font-size:13.5px}
+.srv-doc span{width:32px;height:32px;border-radius:50%;background:var(--mint);border:1.5px solid var(--teal);display:grid;place-items:center;font-size:16px;flex:none}
+.srv-doc b{display:block;color:var(--ink);line-height:1.2}
+.srv-doc small{color:var(--teal);font-weight:600;font-size:12px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center}
+.stat b{display:block;font-size:34px;color:var(--teal);line-height:1.2}
+.stat span{color:var(--muted);font-size:14px}
+.doc{flex-direction:row;gap:16px;align-items:center;justify-content:flex-start}
+.avatar{flex:none;width:64px;height:64px;border-radius:50%;background:var(--mint);border:2px solid var(--teal);display:grid;place-items:center;font-size:28px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+form{display:grid;gap:12px}
+input,select{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:inherit}
+.info p{margin:0 0 14px}
+.info small{display:block;color:var(--muted);font-size:15px}
+.faq{max-width:720px}.faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}.faq summary{cursor:pointer;font-weight:600;color:var(--teal)}.faq p{margin:10px 0 0;color:var(--muted)}
+footer{padding:28px 0 90px;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:25;display:flex;align-items:center;gap:8px;background:var(--wa);color:#fff;padding:13px 20px;border-radius:999px;text-decoration:none;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.wa svg{width:24px;height:24px;fill:#fff}
+.wa::after{content:"";position:absolute;inset:0;border-radius:999px;border:2px solid var(--wa);animation:ping 2.4s infinite}
+@keyframes ping{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.35);opacity:0}}
+.scroll-bar{position:fixed;top:0;left:0;height:4px;width:0%;background:linear-gradient(90deg,var(--teal),var(--wa));z-index:50;transition:width .1s ease-out}
+.type-cursor{display:inline-block;width:3px;height:.9em;background:var(--teal);margin-left:4px;vertical-align:baseline;animation:blinkCursor .75s step-end infinite}
+@keyframes blinkCursor{0%,100%{opacity:1}50%{opacity:0}}
+.rv{opacity:0;transform:translateY(38px) scale(.96);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.rv.in{opacity:1;transform:translateY(0) scale(1)}
+.grid .rv:nth-child(2){transition-delay:.07s}.grid .rv:nth-child(3){transition-delay:.14s}.grid .rv:nth-child(4){transition-delay:.21s}
+.grid .rv:nth-child(5){transition-delay:.28s}.grid .rv:nth-child(6){transition-delay:.35s}.grid .rv:nth-child(7){transition-delay:.42s}.grid .rv:nth-child(8){transition-delay:.49s}
+@media (max-width:760px){nav{display:none}.about,.contact{grid-template-columns:1fr}.hero{padding-top:48px}}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.wa::after,.type-cursor{display:none}.tooth{opacity:1;transform:none}#smileLine{stroke-dashoffset:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="scroll-bar" id="scrollBar" aria-hidden="true"></div>
+<header><div class="wrap bar" style="height: 80px;">
+<a class="logo" href="#top" style="font-size: clamp(24px, 4vw, 36px); font-weight: 800; letter-spacing: -0.03em; display: flex; align-items: center; gap: 12px;">
+<span style="font-size: clamp(28px, 4.5vw, 42px); line-height: 1;">🦷</span> Ashraf Dental Care
+</a>
+<nav><a href="#services">Services</a><a href="#about">About</a><a href="#doctors">Doctors</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; text-align: left;">
+<div>
+<h1 style="text-align: left;"><span id="heroLine1">Painless, caring dental</span><br><span id="heroLine2">treatment</span><span class="type-cursor" aria-hidden="true"></span></h1>
+<p style="margin: 0 0 28px; text-align: left;">Modern equipment and experienced doctors for your whole family’s dental health in Chattogram.</p>
+<div class="cta" style="justify-content: flex-start;"><a class="btn" href="#contact">Book an appointment</a><a class="btn ghost" data-wa href="#" target="_blank" rel="noopener">WhatsApp</a></div>
+</div>
+<div class="hero-graphic" style="background: var(--surface); border: 1px solid var(--line); border-radius: 24px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.08); display: flex; flex-direction: column;">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0ht5U2LJXNpDYDyfRj-UFS1NqQfCS5pVKhgTsc0cBGdyU7jpvoSl34l0fk2QE6wpa_wGCBiiGeKA3bRF1ZhnrfyCitZhRrIyTiXpXxe-hjjYJFFjrooW1eSFPBzKz5LYm1e90nC-zn9ra0UISCezACS6IqicM2SK5ja1FrSWLE5gBZ8-9HmGtvMrWfVc/s1600/pexels-drharorswellness-32260065.jpg" data-fallback="https://placehold.co/1000x670/A21E6B/ffffff?text=Ashraf+Dental+Care+Treatment" alt="Dentist wearing a mask and gloves examining a patient lying back on a dental chair" style="width: 100%; height: 340px; object-fit: cover; display: block;" onerror="this.src=this.dataset.fallback;">
+</div>
+</div>
+<svg class="smile" viewBox="0 0 560 180" aria-hidden="true" style="margin-top: 20px;">
+<path id="smileLine" pathLength="1" d="M20 40 Q280 230 540 40"/>
+<g id="teeth"></g>
+</svg>
+</div>
+
+<section id="services"><div class="wrap">
+<h2 class="rv"><span class="type-scroll" data-text="Our services">Our services</span></h2>
+<p class="lead rv">From routine check-ups to advanced treatment, each handled by a dedicated specialist.</p>
+<div class="grid">
+<div class="card rv"><div><h3>Scaling &amp; polishing</h3><p>Removes tartar and stains to keep your gums healthy.</p></div><div class="srv-doc"><span>👨‍⚕️</span><div><b>Dr. Rashedul Islam</b><small>Oral Hygiene Specialist</small></div></div></div>
+<div class="card rv"><div><h3>Fillings</h3><p>Repairs cavities with tooth-coloured composite material.</p></div><div class="srv-doc"><span>👩‍⚕️</span><div><b>Dr. Farhana Yasmin</b><small>Restorative Dentist</small></div></div></div>
+<div class="card rv"><div><h3>Root canal (RCT)</h3><p>Saves your natural tooth with a comfortable, numbed procedure.</p></div><div class="srv-doc"><span>👨‍⚕️</span><div><b>Dr. Ashrafuzzaman</b><small>Endodontist (RCT Specialist)</small></div></div></div>
+<div class="card rv"><div><h3>Braces</h3><p>Straightens crooked teeth for a confident smile.</p></div><div class="srv-doc"><span>👩‍⚕️</span><div><b>Dr. Nusrat Jahan</b><small>Orthodontist</small></div></div></div>
+<div class="card rv"><div><h3>Dental implants</h3><p>A permanent, sturdy replacement for missing teeth.</p></div><div class="srv-doc"><span>👨‍⚕️</span><div><b>Dr. Fahim Faisal</b><small>Oral Implantologist</small></div></div></div>
+<div class="card rv"><div><h3>Crowns &amp; bridges</h3><p>Restores damaged teeth to full strength and a natural look.</p></div><div class="srv-doc"><span>👨‍⚕️</span><div><b>Dr. Tanvir Ahmed</b><small>Prosthodontist</small></div></div></div>
+<div class="card rv"><div><h3>Teeth whitening</h3><p>Safe laser treatment for a brighter, stain-free smile.</p></div><div class="srv-doc"><span>👩‍⚕️</span><div><b>Dr. Sadia Afrin</b><small>Cosmetic Dentist</small></div></div></div>
+<div class="card rv"><div><h3>Children’s dentistry</h3><p>A gentle, fear-free environment tailored for kids.</p></div><div class="srv-doc"><span>👩‍⚕️</span><div><b>Dr. Mehjabin Chowdhury</b><small>Paediatric Dentist</small></div></div></div>
+</div></div></section>
+
+<section id="about" class="alt"><div class="wrap about">
+<div class="rv"><h2><span class="type-scroll" data-text="About us">About us</span></h2>
+<p>Ashraf Dental Care is a modern dental clinic at KB Abdus Sattar Road, Rahmatganj, Kotwali, Chattogram. We take the time to explain every treatment so you can decide with confidence.</p>
+<p>Every patient is treated with 100% autoclave-sterilised instruments.</p></div>
+<div class="stats">
+<div class="stat rv"><b data-n="10">0</b><span>Years of experience</span></div>
+<div class="stat rv"><b data-n="5000">0</b><span>Happy patients</span></div>
+<div class="stat rv"><b data-n="8">0</b><span>Specialist doctors</span></div>
+<div class="stat rv"><b data-n="100">0</b><span>% sterilised instruments</span></div>
+</div></div></section>
+
+<section id="doctors"><div class="wrap">
+<h2 class="rv"><span class="type-scroll" data-text="Our 8 specialist doctors">Our 8 specialist doctors</span></h2>
+<p class="lead rv">Dedicated BMDC-registered dental surgeons assigned to each specialised service.</p>
+<div class="grid">
+<div class="card doc rv"><div class="avatar">👨‍⚕️</div><div><h3>Dr. Rashedul Islam</h3><p><b>Scaling &amp; polishing</b><br>BDS, PGT (Periodontology)<br>BMDC No: A-9612</p></div></div>
+<div class="card doc rv"><div class="avatar">👩‍⚕️</div><div><h3>Dr. Farhana Yasmin</h3><p><b>Fillings</b><br>BDS (DU), PGT (Restorative)<br>BMDC No: A-9874</p></div></div>
+<div class="card doc rv"><div class="avatar">👨‍⚕️</div><div><h3>Dr. Ashrafuzzaman</h3><p><b>Root canal (RCT)</b><br>BDS (CU), PGT (Conservative)<br>BMDC No: A-7842</p></div></div>
+<div class="card doc rv"><div class="avatar">👩‍⚕️</div><div><h3>Dr. Nusrat Jahan</h3><p><b>Braces</b><br>BDS, FCPS (Orthodontics)<br>BMDC No: A-8419</p></div></div>
+<div class="card doc rv"><div class="avatar">👨‍⚕️</div><div><h3>Dr. Fahim Faisal</h3><p><b>Dental implants</b><br>BDS, MS (Oral Implantology)<br>BMDC No: A-8920</p></div></div>
+<div class="card doc rv"><div class="avatar">👨‍⚕️</div><div><h3>Dr. Tanvir Ahmed</h3><p><b>Crowns &amp; bridges</b><br>BDS, MS (Prosthodontics)<br>BMDC No: A-9105</p></div></div>
+<div class="card doc rv"><div class="avatar">👩‍⚕️</div><div><h3>Dr. Sadia Afrin</h3><p><b>Teeth whitening</b><br>BDS, PGT (Cosmetic Dentistry)<br>BMDC No: A-9431</p></div></div>
+<div class="card doc rv"><div class="avatar">👩‍⚕️</div><div><h3>Dr. Mehjabin Chowdhury</h3><p><b>Children’s dentistry</b><br>BDS, MDS (Paedodontics)<br>BMDC No: A-10124</p></div></div>
+</div></div></section>
+
+<section id="reviews" class="alt"><div class="wrap">
+<h2 class="rv"><span class="type-scroll" data-text="What patients say">What patients say</span></h2>
+<p class="lead rv">Trusted by families across Chattogram for gentle and transparent dental care.</p>
+<div class="grid">
+<div class="card rv"><p>“I was scared of a root canal, but Dr. Ashrafuzzaman made it completely painless and explained every step.”</p><h3 style="margin-top:12px;font-size:16px">Mahmudul Hasan, Rahmatganj</h3></div>
+<div class="card rv"><p>“My son used to cry at the mention of a dentist. Dr. Mehjabin was so gentle that he asks to come back.”</p><h3 style="margin-top:12px;font-size:16px">Tasnim Akter, Kotwali</h3></div>
+<div class="card rv"><p>“Spotless clinic, appointments on time, and the exact treatment cost was explained upfront.”</p><h3 style="margin-top:12px;font-size:16px">Shakil Chowdhury, Chawkbazar</h3></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap">
+<h2 class="rv"><span class="type-scroll" data-text="Frequently asked questions">Frequently asked questions</span></h2>
+<div class="faq rv">
+<details><summary>Does a root canal hurt?</summary><p>The tooth is gently numbed before treatment, so you feel no pain during the procedure.</p></details>
+<details><summary>How much does treatment cost?</summary><p>The cost depends on the treatment. At your first check-up the specialist will give you a clear estimate.</p></details>
+<details><summary>How often should I get my teeth cleaned?</summary><p>A scaling and routine check-up every six months is recommended for healthy gums.</p></details>
+<details><summary>What should I do if I have sudden tooth pain?</summary><p>Rinse with lukewarm water, avoid pressing on the sore spot, and message us on WhatsApp straight away.</p></details>
+<details><summary>Can I pay with bKash or Nagad?</summary><p>Yes. We accept cash, bKash, Nagad and all major cards.</p></details>
+</div></div></section>
+
+<section id="contact" class="alt"><div class="wrap contact">
+<div class="rv"><h2><span class="type-scroll" data-text="Book an appointment">Book an appointment</span></h2>
+<p class="lead">Fill in the form and your details will open directly in WhatsApp for instant confirmation.</p>
+<form id="f">
+<input id="n" required placeholder="Your full name" autocomplete="name">
+<input id="p" required type="tel" placeholder="Phone number (e.g. 01987819000)" autocomplete="tel">
+<select id="s">
+<option>Scaling &amp; polishing – Dr. Rashedul Islam</option>
+<option>Fillings – Dr. Farhana Yasmin</option>
+<option>Root canal (RCT) – Dr. Ashrafuzzaman</option>
+<option>Braces – Dr. Nusrat Jahan</option>
+<option>Dental implants – Dr. Fahim Faisal</option>
+<option>Crowns &amp; bridges – Dr. Tanvir Ahmed</option>
+<option>Teeth whitening – Dr. Sadia Afrin</option>
+<option>Children’s dentistry – Dr. Mehjabin Chowdhury</option>
+<option>General Check-up / Other</option>
+</select>
+<input id="d" type="date" aria-label="Preferred date">
+<button class="btn" type="submit">Send request on WhatsApp</button>
+</form></div>
+<div class="info rv"><h2>Contact</h2>
+<p><b>Address</b><small>KB Abdus Sattar Road, Rahmatganj, Kotwali, Chattogram, Bangladesh</small></p>
+<p><b>Email</b><small><a href="mailto:ashrafujjaman363@gmail.com">ashrafujjaman363@gmail.com</a></small></p>
+<p><b>WhatsApp</b><small><a data-wa href="#" target="_blank" rel="noopener">01987819000 (Message directly)</a></small></p>
+<p><b>Chamber hours</b><small>Saturday to Thursday, 4:00 pm – 9:30 pm (Friday closed)</small></p>
+<p><b>Payment</b><small>Cash, bKash, Nagad and cards</small></p></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Ashraf Dental Care | KB Abdus Sattar Road, Rahmatganj, Kotwali, Chattogram</div></footer>
+
+<a class="wa" data-wa href="#" target="_blank" rel="noopener" aria-label="Message us on WhatsApp">
+<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200 5.200 5.200 0 0 0 1.100 2.800 11.900 11.900 0 0 0 4.600 4c1.700.7 2.400.8 3.300.6a2.800 2.800 0 0 0 1.800-1.300c.2-.5.200-.9.100-1z"/></svg>
+WhatsApp</a>
+
+<script>
+var WA_NUMBER="8801987819000";
+var MSG="Hello, I would like to book an appointment at Ashraf Dental Care.";
+function wa(t){return "https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(t)}
+document.querySelectorAll("[data-wa]").forEach(function(a){a.href=wa(MSG)});
+document.getElementById("f").addEventListener("submit",function(e){
+e.preventDefault();
+var m="Appointment request – Ashraf Dental Care\nName: "+n.value+"\nPhone: "+p.value+"\nService & Doctor: "+s.value+"\nPreferred Date: "+(d.value||"Any");
+window.open(wa(m),"_blank");
+});
+// smile drawn on scroll
+var g=document.getElementById("teeth"),NS="http://www.w3.org/2000/svg",teeth=[];
+for(var i=0;i<7;i++){var u=(i+1)/8,x=(1-u)*(1-u)*20+2*u*(1-u)*280+u*u*540,y=(1-u)*(1-u)*40+2*u*(1-u)*230+u*u*40;
+var r=document.createElementNS(NS,"rect");r.setAttribute("x",x-22);r.setAttribute("y",y+8);r.setAttribute("width",44);r.setAttribute("height",52);r.setAttribute("rx",16);r.setAttribute("class","tooth");g.appendChild(r);teeth.push(r)}
+var line=document.getElementById("smileLine"),svg=document.querySelector(".smile");
+function drawSmile(){var b=svg.getBoundingClientRect(),vh=innerHeight;
+var p=Math.min(1,Math.max(0,(vh*0.95-b.top)/(vh*0.6)));
+line.style.strokeDashoffset=1-p;
+teeth.forEach(function(t,i){t.classList.toggle("on",p>(i+1)/8)})}
+var sBar=document.getElementById("scrollBar");
+function updateScrollBar(){var h=document.documentElement.scrollHeight-innerHeight;if(h>0&&sBar)sBar.style.width=(scrollY/h*100)+"%"}
+addEventListener("scroll",function(){drawSmile();updateScrollBar()},{passive:true});addEventListener("resize",function(){drawSmile();updateScrollBar()});drawSmile();updateScrollBar();
+// scroll reveal + typewriter headings + counters
+var reduceMotion=matchMedia("(prefers-reduced-motion:reduce)").matches;
+function runHeroTwoLineTypewriter(){
+var l1=document.getElementById("heroLine1"),l2=document.getElementById("heroLine2");
+if(!l1||!l2)return;
+var t1="Painless, caring dental",t2="treatment";
+if(reduceMotion){l1.textContent=t1;l2.textContent=t2;return}
+l1.textContent="";l2.textContent="";
+var i=0,j=0;
+function typeFirst(){if(i<t1.length){l1.textContent+=t1.charAt(i++);setTimeout(typeFirst,48)}else{setTimeout(typeSecond,140)}}
+function typeSecond(){if(j<t2.length){l2.textContent+=t2.charAt(j++);setTimeout(typeSecond,55)}}
+typeFirst();
+}
+runHeroTwoLineTypewriter();
+function typeHeading(el){if(el.dataset.typed)return;el.dataset.typed="1";var txt=el.dataset.text||el.textContent;if(reduceMotion){el.textContent=txt;return}el.textContent="";var idx=0;function step(){if(idx<txt.length){el.textContent+=txt.charAt(idx++);setTimeout(step,42)}}step()}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");var c=e.target.querySelector("[data-n]");if(c)count(c);var tw=e.target.classList.contains("type-scroll")?e.target:e.target.querySelector(".type-scroll");if(tw)typeHeading(tw);io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll(".rv, .type-scroll").forEach(function(el){io.observe(el)});
+function count(el){var to=+el.dataset.n,s=null;function f(ts){s=s||ts;var k=Math.min(1,(ts-s)/1200);el.textContent=Math.round(to*k).toLocaleString("en-US")+(k===1&&to>=1000?"+":"");if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+</script>
+</body>
+</html>
